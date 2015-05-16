@@ -1,0 +1,3 @@
+[submodule "emacs/tomorrow-night-paradise-theme"]
+	path = emacs/tomorrow-night-paradise-theme
+	url = git@github.com:jimeh/tomorrow-night-paradise-theme.el.git
