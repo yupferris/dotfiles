@@ -15,7 +15,14 @@
  '(nyan-mode nil)
  '(nyan-wavy-trail t)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(visible-bell nil)
+
+ ;; Some haskell var's
+ '(haskell-process-suggest-remove-import-lines t)
+ '(haskell-process-auto-import-loaded-modules t)
+ '(haskell-process-log t)
+ '(haskell-process-type 'cabal-repl))
 
 ;; Fonts'n'shit
 (set-face-attribute 'default nil :height 100)
@@ -28,16 +35,45 @@
 
 ;; Melpa the fuck
 (require 'package)
-(add-to-list
- 'package-archives
- '("melpa" . "http://melpa.org/packages/")
- t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(unless package-archive-contents (package-refresh-contents))
 (package-initialize)
+
+;; Package helpers
+(defun ensure-and-require (package-name)
+  (unless (package-installed-p package-name)
+    (package-install package-name))
+  (require package-name))
 
 ;; Super rad dark-like-my-heart theme
 (add-to-list 'load-path "~/emacs/tomorrow-night-paradise-theme/")
 (add-to-list 'custom-theme-load-path "~/emacs/tomorrow-night-paradise-theme/")
 (require 'tomorrow-night-paradise-theme)
 
+;; F# settings
+(ensure-and-require 'fsharp-mode)
+
 ;; Haskell settings
+(ensure-and-require 'haskell-mode)
+(ensure-and-require 'company)
+(add-hook 'haskell-mode-hook 'company-mode)
+(add-to-list 'company-backends 'company-ghc)
+(custom-set-variables '(company-ghc-show-info t))
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(setq haskell-process-path-cabal "~/.cabal/bin/cabal")
+(eval-after-load 'haskell-mode '(progn
+  (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
+  (define-key haskell-mode-map (kbd "C-c C-z") 'haskell-interactive-switch)
+  (define-key haskell-mode-map (kbd "C-c C-n C-t") 'haskell-process-do-type)
+  (define-key haskell-mode-map (kbd "C-c C-n C-i") 'haskell-process-do-info)
+  (define-key haskell-mode-map (kbd "C-c C-n C-c") 'haskell-process-cabal-build)
+  (define-key haskell-mode-map (kbd "C-c C-n c") 'haskell-process-cabal)
+  (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)))
+(eval-after-load 'haskell-cabal '(progn
+  (define-key haskell-cabal-mode-map (kbd "C-c C-z") 'haskell-interactive-switch)
+  (define-key haskell-cabal-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
+  (define-key haskell-cabal-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
+  (define-key haskell-cabal-mode-map (kbd "C-c c") 'haskell-process-cabal)))
+
+;; Rust settings
+(ensure-and-require 'rust-mode)
