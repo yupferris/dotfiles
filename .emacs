@@ -50,6 +50,13 @@
 (add-to-list 'custom-theme-load-path "~/emacs/tomorrow-night-paradise-theme/")
 (require 'tomorrow-night-paradise-theme)
 
+;; Buffer helpers
+(ensure-and-require 'buffer-move)
+
+;; Git helpers
+(ensure-and-require 'magit)
+(setq magit-auto-revert-mode nil)
+
 ;; F# settings
 (ensure-and-require 'fsharp-mode)
 
