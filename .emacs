@@ -33,6 +33,13 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; Line numbers
+(global-linum-mode t)
+
+;; Position info
+(setq line-number-mode t)
+(setq column-number-mode t)
+
 ;; Melpa the fuck
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
