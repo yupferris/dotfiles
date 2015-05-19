@@ -9,20 +9,18 @@
  '(blink-cursor-blinks 0)
  '(blink-cursor-delay 0.2)
  '(blink-cursor-interval 0.2)
- '(menu-bar-mode nil)
- '(nyan-animate-nyancat nil)
- '(nyan-animation-frame-interval 0.2)
- '(nyan-mode nil)
- '(nyan-wavy-trail t)
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
- '(tool-bar-mode nil)
- '(visible-bell nil)
-
- ;; Some haskell var's
- '(haskell-process-suggest-remove-import-lines t)
+ '(company-ghc-show-info t)
+ '(fsharp-continuation-offset 4)
+ '(fsharp-indent-offset 4)
+ '(fsharp-tab-always-indent nil)
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
- '(haskell-process-type 'cabal-repl))
+ '(haskell-process-suggest-remove-import-lines t)
+ '(haskell-process-type (quote cabal-repl))
+ '(menu-bar-mode nil)
+ '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(tool-bar-mode nil)
+ '(visible-bell nil))
 
 ;; Fonts'n'shit
 (set-face-attribute 'default nil :height 100)
@@ -72,7 +70,7 @@
 (ensure-and-require 'company)
 (add-hook 'haskell-mode-hook 'company-mode)
 (add-to-list 'company-backends 'company-ghc)
-(custom-set-variables '(company-ghc-show-info t))
+
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 (setq haskell-process-path-cabal "~/.cabal/bin/cabal")
 (eval-after-load 'haskell-mode '(progn
