@@ -12,12 +12,16 @@
  '(company-ghc-show-info t)
  '(fsharp-continuation-offset 4)
  '(fsharp-indent-offset 4)
- '(fsharp-tab-always-indent nil)
+ '(fsharp-tab-always-indent t)
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
  '(haskell-process-type (quote cabal-repl))
  '(menu-bar-mode nil)
+ '(nyan-animate-nyancat nil)
+ '(nyan-animation-frame-interval 0.2)
+ '(nyan-mode nil)
+ '(nyan-wavy-trail t)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(tool-bar-mode nil)
  '(visible-bell nil))
@@ -55,8 +59,17 @@
 (add-to-list 'custom-theme-load-path "~/emacs/tomorrow-night-paradise-theme/")
 (require 'tomorrow-night-paradise-theme)
 
+;; Window helpers
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 ;; Buffer helpers
 (ensure-and-require 'buffer-move)
+
+;; Eshell helpers
+(when (memq window-system '(mac ns))
+  (ensure-and-require 'exec-path-from-shell)
+  (exec-path-from-shell-initialize))
 
 ;; Git helpers
 (ensure-and-require 'magit)
