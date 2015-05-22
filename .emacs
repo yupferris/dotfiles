@@ -60,11 +60,15 @@
 (require 'tomorrow-night-paradise-theme)
 
 ;; Window helpers
+(require 'windmove)
 (when (fboundp 'windmove-default-keybindings)
-  (windmove-default-keybindings))
+  (windmove-default-keybindings 'super))
 
 ;; Buffer helpers
 (ensure-and-require 'buffer-move)
+
+;; Org helpers
+(ensure-and-require 'org)
 
 ;; Eshell helpers
 (when (memq window-system '(mac ns))
