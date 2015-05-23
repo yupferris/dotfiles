@@ -78,6 +78,7 @@
 ;; Git helpers
 (ensure-and-require 'magit)
 (setq magit-auto-revert-mode nil)
+(setq magit-last-seen-setup-instructions "1.4.0")
 
 ;; F# settings
 (ensure-and-require 'fsharp-mode)
