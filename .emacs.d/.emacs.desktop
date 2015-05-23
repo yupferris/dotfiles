@@ -1,0 +1,107 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri May 22 23:22:08 2015
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (21856 7312 661362 0) (desktop . "206") "yupferris@macferris.local" nil nil ((((font-backend mac-ct ns) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-10-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (foreground-color . "#dadada") (background-color . "#000000") (line-spacing) (left-fringe . 9) (right-fringe . 9) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (alpha) (fullscreen) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "white") (environment) (frameset--id . "0481-A118-71A9-F825") (frameset--mini t . t) (height . 77) (width . 233) (modeline . t) (minibuffer . t) (unsplittable) (left . 2) (top . 23) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "macferris.local") (explicit-name) (tool-bar-position . top)) ((min-height . 8) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 16) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 88) (min-pixel-width . 120) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 96) (min-pixel-height-safe . 22) (min-pixel-width-safe . 24)) hc (pixel-width . 1431) (pixel-height . 836) (total-width . 238) (total-height . 76) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 717) (pixel-height . 836) (total-width . 119) (total-height . 76) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 717) (pixel-height . 418) (total-width . 119) (total-height . 38) (normal-height . 0.5) (normal-width . 1.0) (buffer "fflat.sln" (selected) (hscroll . 0) (fringes 9 9 nil) (margins 2) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1))) (leaf (last . t) (pixel-width . 717) (pixel-height . 418) (total-width . 119) (total-height . 38) (normal-height . 0.5) (normal-width . 1.0) (buffer "Derp.sln" (selected) (hscroll . 0) (fringes 9 9 nil) (margins 2) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)))) (vc (last . t) (pixel-width . 714) (pixel-height . 836) (total-width . 119) (total-height . 76) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 714) (pixel-height . 418) (total-width . 119) (total-height . 38) (normal-height . 0.5) (normal-width . 1.0) (buffer "Main.hs" (selected . t) (hscroll . 0) (fringes 9 9 nil) (margins 3) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 3385) (start . 2161))) (leaf (last . t) (pixel-width . 714) (pixel-height . 418) (total-width . 119) (total-height . 38) (normal-height . 0.5) (normal-width . 1.0) (buffer "*eshell*" (selected) (hscroll . 0) (fringes 9 9 nil) (margins 3) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 18700) (start . 17675))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/" "~/dev/projects/fsade/Derp/Derp.sln" "/Users/yupferris/dev/projects/fsade/.git/COMMIT_EDITMSG" "~/dev/projects/fsade/fsade.cabal" "/Users/yupferris/dev/projects/fsade/.git/COMMIT_EDITMSG" "~/dev/projects/fsade/Derp/Derp.sln" "~/dev/projects/fflat/Ffc/Ffc.fsproj" "/Users/yupferris/dev/projects/fsade/.git/COMMIT_EDITMSG" "~/dev/projects/fsade/Derp/Derp.sln" "/Users/yupferris/dev/projects/fsade/.git/COMMIT_EDITMSG" "~/dev/projects/fsade/Derp/Derp.sln" "~/dev/projects/fflat/fflat.sln" "~/dev/projects/fsade/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/yupferris/dev/projects/fsade/src/Main.hs"
+  "Main.hs"
+  'haskell-mode
+  '(linum-mode company-mode haskell-indentation-mode)
+  3385
+  '(317 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/yupferris/dev/projects/fsade/Derp/Derp.sln"
+  "Derp.sln"
+  'fundamental-mode
+  '(linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/yupferris/dev/projects/fflat/fflat.sln"
+  "fflat.sln"
+  'fundamental-mode
+  '(linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-with-signature-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "Derp"
+  'dired-mode
+  '(linum-mode)
+  253
+  '(nil nil)
+  t
+  '("/Users/yupferris/dev/projects/fsade/Derp/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/yupferris/dev/projects/fsade/fsade.cabal"
+  "fsade.cabal"
+  'haskell-cabal-mode
+  '(linum-mode)
+  239
+  '(201 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/yupferris/dev/projects/fflat/Ffc/Ffc.fsproj"
+  "Ffc.fsproj"
+  'nxml-mode
+  '(linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-with-signature-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "fsade"
+  'dired-mode
+  '(linum-mode)
+  678
+  '(nil nil)
+  t
+  '("/Users/yupferris/dev/projects/fsade/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "src"
+  'dired-mode
+  '(linum-mode)
+  256
+  '(nil nil)
+  t
+  '("/Users/yupferris/dev/projects/fsade/src/")
+  nil)
+
