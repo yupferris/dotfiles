@@ -1,128 +1,128 @@
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-ls
-xbuild
-xbuild
-cd ..
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-ls
-nano
-ls
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cd ..
-cd Derp
-ls
-cd ..
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-hlint
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cd Derp
-xbuild
-cd ..
-ls
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cd Derp
-xbuild
-cd ..
-cd Derp
-ls
-cd ..
-ld Derp
-ls Derp
-ls
-cd dist
-ls
-cd build
-ls
-cd fsade
-ls
-cd ../../..
-ls
-cabal run
-cabal run
-cabal run
-cabal run
-cabal run
-cabal run
-cabal run
-cabal run
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run
-git status
-git remote add origin git@github.com:yupferris/fsade.git
-git push -u origin master
-cabal install hlint
-hlint
-cabal hlint
-cabal update && cabal install hlint
-cabal update && cabal install hlint --reinstall
-hlint
-cabal run
-cabal run -- new Derp
-cabal run -- new Derp
-cabal run
-cabal run
-cabal run
-git reset --hard origin master
-git reset --hard origin/master
-git status
-cabal run
-cabal run
-cabal run a
-cabal run a
-cabal run a
-cabal run a
-cabal run new Derp
-cabal run new Derp
-cd ../hangman/
-cabal run
-runhaskell Main.hs
-cd ../fsade
-cabal run -- new Derp
-cabal run -- new Derp
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo clean
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run
+cargo clean
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo run -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+cargo run -- test/ct/308\ Undersea\ Palace.spc 
+cargo clean
+cargo run --release -- test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+./target/release/samurai_pizza_cats test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+./target/release/samurai_pizza_cats test/rd/07\ The\ Girl\ Who\ Stole\ the\ Stars.spc 
+ls target/release/samurai_pizza_cats 
+ls -l target/release/samurai_pizza_cats 

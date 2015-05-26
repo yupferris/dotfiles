@@ -67,6 +67,9 @@
 ;; Buffer helpers
 (ensure-and-require 'buffer-move)
 
+;; Saving the world helpers
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; Org helpers
 (ensure-and-require 'org)
 
