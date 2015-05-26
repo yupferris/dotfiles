@@ -70,6 +70,9 @@
 ;; Saving the world helpers
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; Misc editor helpers
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; Org helpers
 (ensure-and-require 'org)
 
