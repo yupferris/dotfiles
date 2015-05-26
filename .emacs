@@ -72,6 +72,7 @@
 
 ;; Misc editor helpers
 (fset 'yes-or-no-p 'y-or-n-p)
+(show-paren-mode t)
 
 ;; Org helpers
 (ensure-and-require 'org)
