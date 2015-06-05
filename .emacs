@@ -85,6 +85,9 @@
         (t nil)))
 (global-set-key (kbd "\C-c )") `goto-match-paren)
 
+(ensure-and-require 'ace-jump-mode)
+(global-set-key (kbd "C-<tab>") #'ace-jump-word-mode)
+
 ;; Org helpers
 (ensure-and-require 'org)
 
@@ -125,3 +128,6 @@
 
 ;; Rust settings
 (ensure-and-require 'rust-mode)
+
+;; CC settings
+(setq-default c-basic-offset 4)
