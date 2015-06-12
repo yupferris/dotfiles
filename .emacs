@@ -93,6 +93,9 @@
 (ensure-and-require 'ace-jump-mode)
 (global-set-key (kbd "C-<tab>") #'ace-jump-word-mode)
 
+(ensure-and-require 'drag-stuff)
+(drag-stuff-global-mode)
+
 ;; Org helpers
 (ensure-and-require 'org)
 
