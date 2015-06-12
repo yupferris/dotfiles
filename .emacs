@@ -59,6 +59,11 @@
 (add-to-list 'custom-theme-load-path "~/emacs/tomorrow-night-paradise-theme/")
 (require 'tomorrow-night-paradise-theme)
 
+;; Meta helpers
+(ensure-and-require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+
 ;; Window helpers
 (require 'windmove)
 (when (fboundp 'windmove-default-keybindings)
