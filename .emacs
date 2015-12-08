@@ -58,9 +58,10 @@
   (require package-name))
 
 ;; Super rad dark-like-my-heart theme
-(add-to-list 'load-path "~/emacs/tomorrow-night-paradise-theme/")
-(add-to-list 'custom-theme-load-path "~/emacs/tomorrow-night-paradise-theme/")
-(require 'tomorrow-night-paradise-theme)
+(add-to-list 'load-path "~/emacs/pastel-tron-theme/")
+(add-to-list 'custom-theme-load-path "~/emacs/pastel-tron-theme/")
+(require 'pastel-tron-theme)
+(load-theme `pastel-tron t)
 
 ;; Meta helpers
 (ensure-and-require 'smex)
