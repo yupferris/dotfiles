@@ -117,7 +117,7 @@
 (defun irc ()
   "Connect to IRC"
   (interactive)
-  (erc :server "irc.freenode.net"
+  (erc :server "irc.us.ircnet.net"
        :port 6667
        :nick "yupferris")
   (erc :server "efnet.port80.se"
