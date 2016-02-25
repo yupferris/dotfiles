@@ -113,6 +113,18 @@
 (setq magit-auto-revert-mode nil)
 (setq magit-last-seen-setup-instructions "1.4.0")
 
+;; IRC helpers
+(defun irc ()
+  "Connect to IRC"
+  (interactive)
+  (erc :server "irc.freenode.net"
+       :port 6667
+       :nick "yupferris")
+  (erc :server "efnet.port80.se"
+       :port 6667
+       :nick "yupferris"))
+(global-set-key (kbd "\C-c i") 'irc)
+
 ;; F# settings
 (ensure-and-require 'fsharp-mode)
 
