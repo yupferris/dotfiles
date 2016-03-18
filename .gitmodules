@@ -1,0 +1,3 @@
+[submodule "emacs/plantuml-mode"]
+	path = emacs/plantuml-mode
+	url = git@github.com:zwz/plantuml-mode.git

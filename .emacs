@@ -155,3 +155,7 @@
 
 ;; CC settings
 (setq-default c-basic-offset 4)
+
+;; PlantUML settings
+(add-to-list 'load-path "~/emacs/plantuml-mode/")
+(require `plantuml-mode)
