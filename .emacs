@@ -158,4 +158,4 @@
 
 ;; PlantUML settings
 (add-to-list 'load-path "~/emacs/plantuml-mode/")
-(require `plantuml-mode)
+;;(require 'plantuml-mode)
