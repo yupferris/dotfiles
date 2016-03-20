@@ -159,3 +159,7 @@
 ;; PlantUML settings
 (add-to-list 'load-path "~/emacs/plantuml-mode/")
 ;;(require 'plantuml-mode)
+
+;; GLSL settings
+(add-to-list 'load-path "~/emacs/glsl-mode/")
+(require 'glsl-mode)
