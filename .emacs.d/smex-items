@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ find-function
+ package-list-packages
  magit-status
  recover-this-file
  eval-buffer
- package-list-packages
  global-linum-mode
  revert-buffer
- nxml-mode
 )
 
 ;; ----- smex-data -----
 (
  (eval-buffer . 141)
- (magit-status . 1303)
+ (magit-status . 1304)
  (eshell . 208)
  (hexl-mode . 30)
  (js2-mode . 72)
@@ -56,7 +56,7 @@
  (display-time-world . 1)
  (rectangle-mark-mode . 9)
  (package-install . 3)
- (package-list-packages . 2)
+ (package-list-packages . 4)
  (buf-move-down . 5)
  (new-frame . 1)
  (butterfly . 1)
@@ -67,4 +67,5 @@
  (markdown-mode . 1)
  (global-linum-mode . 1)
  (recover-this-file . 2)
+ (find-function . 1)
 )
