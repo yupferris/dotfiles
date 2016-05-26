@@ -22,7 +22,6 @@
  '(nyan-animation-frame-interval 0.2)
  '(nyan-mode nil)
  '(nyan-wavy-trail t)
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/"))))
  '(tool-bar-mode nil)
  '(visible-bell nil))
 
@@ -48,7 +47,7 @@
 ;; Melpa the fuck
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(unless package-archive-contents (package-refresh-contents))
+;; (unless package-archive-contents (package-refresh-contents))
 (package-initialize)
 
 ;; Package helpers
@@ -163,3 +162,6 @@
 ;; GLSL settings
 (add-to-list 'load-path "~/emacs/glsl-mode/")
 (require 'glsl-mode)
+
+;; Elm settings
+(ensure-and-require 'elm-mode)

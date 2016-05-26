@@ -1,0 +1,70 @@
+
+;; ----- smex-history -----
+(
+ magit-status
+ recover-this-file
+ eval-buffer
+ package-list-packages
+ global-linum-mode
+ revert-buffer
+ nxml-mode
+)
+
+;; ----- smex-data -----
+(
+ (eval-buffer . 141)
+ (magit-status . 1303)
+ (eshell . 208)
+ (hexl-mode . 30)
+ (js2-mode . 72)
+ (nxml-mode . 103)
+ (customize . 16)
+ (csharp-mode . 18)
+ (buf-move-right . 11)
+ (buf-move-left . 9)
+ (hexl-menu . 1)
+ (toggle-truncate-lines . 9)
+ (rgrep . 4)
+ (dired . 1)
+ (term-magic-space . 1)
+ (sdb . 1)
+ (whitespace-mode . 12)
+ (revert-buffer . 43)
+ (hexl-mode-exit . 4)
+ (list-packages . 5)
+ (text-mode . 11)
+ (org-export-dispatch . 2)
+ (customize-face . 3)
+ (toggle-word-wrap . 5)
+ (org-mode . 1)
+ (set-variable . 2)
+ (drag-stuff-mode . 1)
+ (erc . 20)
+ (buf-move-up . 9)
+ (recover-file . 1)
+ (diff . 3)
+ (ediff . 3)
+ (ediff-jump-to-difference . 3)
+ (nyan-mode . 4)
+ (nyan-start-music . 1)
+ (nyan-start-animation . 1)
+ (nyan-stop-animation . 1)
+ (line-number-mode . 2)
+ (css-mode . 3)
+ (objc-mode . 1)
+ (tetris . 3)
+ (display-time-world . 1)
+ (rectangle-mark-mode . 9)
+ (package-install . 3)
+ (package-list-packages . 2)
+ (buf-move-down . 5)
+ (new-frame . 1)
+ (butterfly . 1)
+ (fundamental-mode . 5)
+ (plantuml-run . 1)
+ (plantuml-mode . 1)
+ (plantuml-run-and-display . 1)
+ (markdown-mode . 1)
+ (global-linum-mode . 1)
+ (recover-this-file . 2)
+)

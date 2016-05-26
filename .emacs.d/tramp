@@ -1,0 +1,48 @@
+;; -*- emacs-lisp -*- <15/11/02 22:47:15 /Users/yupferris/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["sudo" "root" "macferris.local" nil nil]
+  ("locale" "LC_ALL=C")
+  ("uname" "Darwin 14.5.0")
+  ("test" "test")
+  ("remote-path"
+   ("/usr/bin" "/bin" "/usr/sbin" "/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("~root" "/var/root")
+  ("file-exists" "test -e")
+  ("readlink" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("stat" nil)
+  ("ls" "/bin/ls")
+  ("git" "\\git")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("gid-string" "wheel")
+  ("uid-integer" 0)
+  ("tmpdir" "/sudo:root@macferris.local:/tmp")
+  ("touch-t" t)
+  ("touch" "\\touch")
+  ("trash" nil)
+  ("ls-dired" nil))
+ (["ssh" "yupferris" "everyweeks.com" nil nil]
+  ("locale" "LC_ALL=en_US.utf8")
+  ("uname" "Linux 3.16.0-4-amd64")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1000)
+  ("gid-string" "yupferris")
+  ("readlink" "\\readlink")
+  ("~" "/home/yupferris")))

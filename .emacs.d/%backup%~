@@ -1,0 +1,19 @@
+{
+    "UnoVersion": "0.5.2693-OSX",
+
+    "PackageSearchPaths": [
+        "../../Packages",
+        "/usr/share/uno/Packages"
+    ],
+
+    "SdkConfig": "/usr/share/uno/SDKs/.sdkconfig",
+    "SdkDownloaderClientExe": "SDKDownloader.app/Contents/MonoBundle/sdkdownloader.exe",
+    "SdkDownloaderApp": "SDKDownloader.app",
+
+    "TemplatesDirectory": "Templates",
+
+    "UnoCoreDll": "Uno.Runtime.Core.dll",
+    "UnoBrowseApp": "UnoBrowse.app",
+    "UnoRunApp": "UnoRun.app",
+    "UnoExe": "uno.exe"
+}
