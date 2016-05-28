@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ eval-buffer
+ shell-command
+ eshell
  find-function
  package-list-packages
  magit-status
  recover-this-file
- eval-buffer
- global-linum-mode
- revert-buffer
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 141)
+ (eval-buffer . 146)
  (magit-status . 1304)
- (eshell . 208)
+ (eshell . 209)
  (hexl-mode . 30)
  (js2-mode . 72)
  (nxml-mode . 103)
@@ -68,4 +68,5 @@
  (global-linum-mode . 1)
  (recover-this-file . 2)
  (find-function . 1)
+ (shell-command . 1)
 )

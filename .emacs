@@ -9,14 +9,9 @@
  '(blink-cursor-blinks 0)
  '(blink-cursor-delay 0.2)
  '(blink-cursor-interval 0.2)
- '(company-ghc-show-info t)
  '(fsharp-continuation-offset 4)
  '(fsharp-indent-offset 4)
  '(fsharp-tab-always-indent t)
- '(haskell-process-auto-import-loaded-modules t)
- '(haskell-process-log t)
- '(haskell-process-suggest-remove-import-lines t)
- '(haskell-process-type (quote cabal-repl))
  '(menu-bar-mode nil)
  '(nyan-animate-nyancat nil)
  '(nyan-animation-frame-interval 0.2)
@@ -61,6 +56,21 @@
 (add-to-list 'custom-theme-load-path "~/emacs/pastel-tron-theme/")
 (require 'pastel-tron-theme)
 (load-theme `pastel-tron t)
+
+;; Path helpers
+
+;; For some reason, I wasn't able to get this to work:
+;;(when (memq window-system '(mac ns))
+;;  (ensure-and-require 'exec-path-from-shell)
+;;  (exec-path-from-shell-initialize))
+
+;; So instead, I hacked it :P
+(when (memq window-system '(mac ns))
+  (setenv
+   "PATH"
+   (concat
+    "~/.cargo/bin:"
+    (getenv "PATH"))))
 
 ;; Meta helpers
 (ensure-and-require 'smex)
@@ -129,28 +139,17 @@
 
 ;; Haskell settings
 (ensure-and-require 'haskell-mode)
+(ensure-and-require 'company-ghc)
 (ensure-and-require 'company)
 (add-hook 'haskell-mode-hook 'company-mode)
 (add-to-list 'company-backends 'company-ghc)
-
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-(setq haskell-process-path-cabal "~/.cabal/bin/cabal")
-(eval-after-load 'haskell-mode '(progn
-  (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
-  (define-key haskell-mode-map (kbd "C-c C-z") 'haskell-interactive-switch)
-  (define-key haskell-mode-map (kbd "C-c C-n C-t") 'haskell-process-do-type)
-  (define-key haskell-mode-map (kbd "C-c C-n C-i") 'haskell-process-do-info)
-  (define-key haskell-mode-map (kbd "C-c C-n C-c") 'haskell-process-cabal-build)
-  (define-key haskell-mode-map (kbd "C-c C-n c") 'haskell-process-cabal)
-  (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)))
-(eval-after-load 'haskell-cabal '(progn
-  (define-key haskell-cabal-mode-map (kbd "C-c C-z") 'haskell-interactive-switch)
-  (define-key haskell-cabal-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
-  (define-key haskell-cabal-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
-  (define-key haskell-cabal-mode-map (kbd "C-c c") 'haskell-process-cabal)))
+(custom-set-variables '(company-ghc-show-info t))
 
 ;; Rust settings
 (ensure-and-require 'rust-mode)
+(add-hook 'rust-mode-hook
+          (lambda ()
+            (local-set-key (kbd "C-c <tab>") #'rust-format-buffer)))
 
 ;; CC settings
 (setq-default c-basic-offset 4)
