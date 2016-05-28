@@ -89,6 +89,14 @@
    `(org-hide ((t (:foreground ,gray-2))))
    `(org-link ((t (:foreground ,blue))))
    `(org-todo ((t (:foreground ,red))))
+
+   ;; company
+   `(company-tooltip ((t (:background "#404040" :foreground "#f0f0f0"))))
+   `(company-scrollbar-bg ((t (:background "#707070"))))
+   `(company-scrollbar-fg ((t (:background "#c0c0c0"))))
+   `(company-tooltip-selection ((t (:background "#707070" :foreground ,blue))))
+   `(company-tooltip-common ((t (:foreground ,green))))
+   `(company-tooltip-annotation ((t (:foreground ,purple))))
    )
 
   (custom-theme-set-variables
