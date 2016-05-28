@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ shell
+ eval-region
+ flycheck-mode
  eval-buffer
  shell-command
  eshell
  find-function
- package-list-packages
- magit-status
- recover-this-file
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 146)
+ (eval-buffer . 147)
  (magit-status . 1304)
  (eshell . 209)
  (hexl-mode . 30)
@@ -69,4 +69,7 @@
  (recover-this-file . 2)
  (find-function . 1)
  (shell-command . 1)
+ (eval-region . 2)
+ (flycheck-mode . 1)
+ (shell . 1)
 )

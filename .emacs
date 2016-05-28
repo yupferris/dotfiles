@@ -58,19 +58,10 @@
 (load-theme `pastel-tron t)
 
 ;; Path helpers
-
-;; For some reason, I wasn't able to get this to work:
-;;(when (memq window-system '(mac ns))
-;;  (ensure-and-require 'exec-path-from-shell)
-;;  (exec-path-from-shell-initialize))
-
-;; So instead, I hacked it :P
 (when (memq window-system '(mac ns))
-  (setenv
-   "PATH"
-   (concat
-    "~/.cargo/bin:"
-    (getenv "PATH"))))
+  (ensure-and-require 'exec-path-from-shell)
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "RUST_SRC_PATH"))
 
 ;; Meta helpers
 (ensure-and-require 'smex)
@@ -150,6 +141,11 @@
 (add-hook 'rust-mode-hook
           (lambda ()
             (local-set-key (kbd "C-c <tab>") #'rust-format-buffer)))
+(ensure-and-require 'cargo)
+(add-hook 'rust-mode-hook 'cargo-minor-mode)
+(ensure-and-require 'flycheck-rust)
+(add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+(add-hook 'rust-mode-hook 'flycheck-mode)
 
 ;; CC settings
 (setq-default c-basic-offset 4)
