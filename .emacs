@@ -127,6 +127,7 @@
 
 ;; Company settings
 (ensure-and-require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
 (setq company-idle-delay 0.5)
 (setq company-minimum-prefix-length 1)
 
@@ -136,7 +137,7 @@
 ;; Haskell settings
 (ensure-and-require 'haskell-mode)
 (ensure-and-require 'company-ghc)
-(add-hook 'haskell-mode-hook 'company-mode)
+;;(add-hook 'haskell-mode-hook 'company-mode)
 (add-to-list 'company-backends 'company-ghc)
 (custom-set-variables '(company-ghc-show-info t))
 
@@ -150,7 +151,7 @@
 (ensure-and-require 'racer)
 (add-hook 'rust-mode-hook #'racer-mode)
 (add-hook 'racer-mode-hook #'eldoc-mode)
-(add-hook 'racer-mode-hook #'company-mode)
+;;(add-hook 'racer-mode-hook #'company-mode)
 (ensure-and-require 'flycheck-rust)
 (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
 (add-hook 'rust-mode-hook 'flycheck-mode)
