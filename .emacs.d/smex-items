@@ -1,38 +1,38 @@
 
 ;; ----- smex-history -----
 (
- emacs-version
- buf-move-left
+ package-list-packages
+ buf-move-up
  magit-status
- shell-command
- normal-mode
- eval-region
- eldoc-mode
+ recover-this-file
+ buf-move-down
+ buf-move-right
+ text-mode
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 147)
- (magit-status . 1317)
+ (eval-buffer . 153)
+ (magit-status . 1503)
  (eshell . 209)
  (hexl-mode . 30)
- (js2-mode . 72)
- (nxml-mode . 103)
+ (js2-mode . 73)
+ (nxml-mode . 105)
  (customize . 16)
- (csharp-mode . 18)
- (buf-move-right . 11)
- (buf-move-left . 12)
+ (csharp-mode . 20)
+ (buf-move-right . 22)
+ (buf-move-left . 17)
  (hexl-menu . 1)
  (toggle-truncate-lines . 9)
  (rgrep . 4)
  (dired . 1)
  (term-magic-space . 1)
  (sdb . 1)
- (whitespace-mode . 12)
+ (whitespace-mode . 18)
  (revert-buffer . 43)
  (hexl-mode-exit . 4)
- (list-packages . 6)
- (text-mode . 11)
+ (list-packages . 9)
+ (text-mode . 12)
  (org-export-dispatch . 2)
  (customize-face . 3)
  (toggle-word-wrap . 5)
@@ -40,7 +40,7 @@
  (set-variable . 2)
  (drag-stuff-mode . 1)
  (erc . 20)
- (buf-move-up . 9)
+ (buf-move-up . 13)
  (recover-file . 1)
  (diff . 3)
  (ediff . 3)
@@ -56,17 +56,17 @@
  (display-time-world . 1)
  (rectangle-mark-mode . 9)
  (package-install . 3)
- (package-list-packages . 4)
- (buf-move-down . 5)
+ (package-list-packages . 7)
+ (buf-move-down . 7)
  (new-frame . 1)
  (butterfly . 1)
  (fundamental-mode . 5)
  (plantuml-run . 1)
  (plantuml-mode . 1)
  (plantuml-run-and-display . 1)
- (markdown-mode . 1)
+ (markdown-mode . 2)
  (global-linum-mode . 1)
- (recover-this-file . 2)
+ (recover-this-file . 13)
  (find-function . 1)
  (shell-command . 3)
  (eval-region . 28)
@@ -74,6 +74,10 @@
  (shell . 1)
  (company-mode . 1)
  (eldoc-mode . 1)
- (normal-mode . 2)
+ (normal-mode . 11)
  (emacs-version . 1)
+ (haskell-mode . 1)
+ (editorconfig-mode . 1)
+ (html-mode . 18)
+ (switch-to-buffer . 1)
 )

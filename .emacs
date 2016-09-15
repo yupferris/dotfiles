@@ -13,10 +13,6 @@
  '(fsharp-indent-offset 4)
  '(fsharp-tab-always-indent t)
  '(menu-bar-mode nil)
- '(nyan-animate-nyancat nil)
- '(nyan-animation-frame-interval 0.2)
- '(nyan-mode nil)
- '(nyan-wavy-trail t)
  '(tool-bar-mode nil)
  '(visible-bell nil))
 
@@ -131,6 +127,10 @@
 (setq company-idle-delay 0.5)
 (setq company-minimum-prefix-length 1)
 
+;; EditorConfig settings
+(ensure-and-require 'editorconfig)
+(editorconfig-mode 1)
+
 ;; F# settings
 (ensure-and-require 'fsharp-mode)
 
@@ -169,3 +169,6 @@
 
 ;; Elm settings
 (ensure-and-require 'elm-mode)
+
+;; Typescript settings
+(ensure-and-require 'typescript-mode)
